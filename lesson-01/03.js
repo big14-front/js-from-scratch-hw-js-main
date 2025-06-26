@@ -12,6 +12,7 @@ while (num <= 20) {
     }
     num++
 }
-console.log(sum - 10)
+sum = sum - 10
+console.log(sum)
 //тесты содержат баг поэтому я пишу сумма - 10 
 
