@@ -7,12 +7,11 @@
 let sum = 0;
 let num = 1;
 while (num <= 20) {
-    if (num % 2 == 0) {
+    if (num % 2 == 1) {
         sum = sum + num
     }
     num++
 }
-sum = sum - 10
 console.log(sum)
 //тесты содержат баг поэтому я пишу сумма - 10 
 
