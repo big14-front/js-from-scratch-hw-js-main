@@ -38,4 +38,4 @@ function calculateAverage(scoresArray) {
 }
 
 
-let scoresAvarahe = calculateAverage(scoresArray)
+let scoresAvarahe = calculateAverage(scores)
