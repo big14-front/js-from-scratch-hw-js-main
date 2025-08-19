@@ -26,16 +26,19 @@
 // console.log('array:', array);
 
 
-let scores = [67, 90, 56, 34, 92, 81, 24];
+// let scores = [67, 90, 56, 34, 92, 81, 24];
 
 
-function calculateAverage(scoresArray) {
-    let sum = 0;
-    for(let i = 0; i < scoresArray.lenght; i++){
-        sum = sum + scoresArray[i]
-    }
-    return sum
-}
+// function calculateAverage(scoresArray) {
+//     let sum = 0;
+//     for(let i = 0; i < scoresArray.lenght; i++){
+//         sum = sum + scoresArray[i]
+//     }
+//     return sum
+// }
 
 
-let scoresAvarahe = calculateAverage(scores)
+// let scoresAvarahe = calculateAverage(scores)
+
+
+
