@@ -3,8 +3,8 @@
 
 function isEven(num) {
     if (num % 2 === 0){
-    console.log('четное');
+    return true;
     } else {
-        console.log('нечетное');
+    return false;
     }
 }
