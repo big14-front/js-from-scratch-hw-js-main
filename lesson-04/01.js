@@ -1,4 +1,4 @@
-/*
+-/*/*
 Напишите функцию `includesElement`, которая принимает массив и элемент, а затем возвращает булево значение, указывающее, содержится ли данный элемент в массиве. Для перебора элементов используйте цикл `for`.
 
 Входные данные:
@@ -13,4 +13,11 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-function includesElement() {}
+function includesElement(array, element) {
+    for(let i = 0; i < array.lenght; i++) {
+        if (array[i] === element) {
+            return true;
+        }
+    } 
+    return false;
+}
