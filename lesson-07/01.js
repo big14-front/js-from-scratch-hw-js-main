@@ -24,10 +24,10 @@ const WEB_TECH_IMAGES = [
 
   function showNext(){
     currentIndex++;
-    if (currentIndex < WEB_TECH_IMAGES.length - 1) {
+    if (currentIndex > WEB_TECH_IMAGES.length - 1) {
      currentIndex = 0;
     }
-    mainImage.scr = WEB_TECH_IMAGES[currentIndex];
+    mainImage.src = WEB_TECH_IMAGES[currentIndex];
   }
 
   function showPrev(){
@@ -35,7 +35,7 @@ const WEB_TECH_IMAGES = [
     if (currentIndex < 0){
      currentIndex = WEB_TECH_IMAGES.length - 1;
     }
-    mainImage.scr = WEB_TECH_IMAGES[currentIndex];
+    mainImage.src = WEB_TECH_IMAGES[currentIndex];
   }
 
   nextBtn.addEventListener('click' , showNext);
