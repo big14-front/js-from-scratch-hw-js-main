@@ -17,3 +17,26 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/c8a1f4a6-1337-4899-bdfd-a8c9c7bb806a_css-magic-logo.jpg',
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
+  let currentIndex = 0;
+  const mainImage = document.getElementById("web-tech-image");
+  const nextBtn = document.getElementById("next-button")
+  const prevBtn = document.getElementById("prev-button")
+
+  function showNext(){
+    currentIndex++;
+    if (currentIndex < WEB_TECH_IMAGES.length - 1) {
+     currentIndex = 0;
+    }
+    mainImage.scr = WEB_TECH_IMAGES[currentIndex];
+  }
+
+  function showPrev(){
+    currentIndex--;
+    if (currentIndex < 0){
+     currentIndex = WEB_TECH_IMAGES.length - 1;
+    }
+    mainImage.scr = WEB_TECH_IMAGES[currentIndex];
+  }
+
+  nextBtn.addEventListener('click' , showNext);
+  prevBtn.addEventListener('click' , showPrev);
